@@ -19,17 +19,21 @@
 
 <body>
     <div class="main-cont">
+
         <div class="sub-cont">
-            <div class="header">
+            <div class="scroll-btn">
+                <a href="#first-hero"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="header" id="header">
                 <div class="logo">
                     <img src="./images/logo.png" alt="">
                 </div>
                 <div class="navList">
                     <ul>
-                        <li>Product s <i class="fa-solid fa-angle-down"></i></li>
-                        <li>Solutions <i class="fa-solid fa-angle-down"></i></li>
-                        <li>Recources <i class="fa-solid fa-angle-down"></i></li>
-                        <li>Pricing <i class="fa-solid fa-angle-down"></i></li>
+                        <li><a href="#sec-hero">Products <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#third-hero">Solutions <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#Fourth-hero">Recources <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="#pricing">Pricing <i class="fa-solid fa-angle-down"></i></a></li>
                     </ul>
                 </div>
                 <div class="btns">
@@ -68,8 +72,10 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            <div class="hero-sec">
-                <div class="hero-text">
+            <!-- 1st Hero Section -->
+
+            <div class="hero-sec" id="first-hero">
+                <div class="hero-text hero-text-wh">
                     <h1>
                         Get More Done with whitepace
                     </h1>
@@ -81,11 +87,12 @@
                         <button>Try whitepace free <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="hero-img "><img src="./images/Man Unlocked New Course 3D Illustration.png" alt=""></div>
+                <div class="hero-img "><img src="./images/WhatsApp Image 2025-04-24 at 21.18.01_6294c117.jpg" alt="">
+                </div>
             </div>
         </div>
         <!-- 2nd Hero Section -->
-        <div class="hero-sec sec-hero">
+        <div class="hero-sec sec-hero" id="sec-hero">
             <div class="hero-text">
                 <h1>
                     Project Management
@@ -98,14 +105,14 @@
                     <button>Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-            <div class="hero-img hero-img-2"><img src="./images/Time Management.png" alt=""></div>
+            <div class="hero-img hero-img-2"><img src="./images/hero2.jpg" alt=""></div>
 
         </div>
         <!-- Third Hero Section -->
-        <div class="hero-sec third-hero">
+        <div class="hero-sec third-hero" id="third-hero">
 
-            <div class="hero-img hero-img-2"><img src="./images/tttt.png" alt=""></div>
-            <div class="hero-text hero-text2">
+            <div class="hero-img hero-img-2"><img src="./images/hero3.jpg" alt=""></div>
+            <div class="hero-text">
                 <h1>
                     Work Together
                 </h1>
@@ -121,12 +128,12 @@
 
         </div>
         <!-- Fourth Hero Section -->
-        <div class="hero-sec Fourth-hero">
+        <div class="hero-sec Fourth-hero" id="Fourth-hero">
 
-            
-            <div class="hero-text hero-text2">
+
+            <div class="hero-text hero-text2 hero-text-wh">
                 <h1>
-                    Work Together
+                    Use as Extension
                 </h1>
                 <p>
                     With whitepace, share your notes with your colleagues and collaborate on them.
@@ -137,89 +144,142 @@
                     <button>Let's Go <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-            <div class="hero-img hero-img-2"><img src="./images/r.png" alt=""></div>
+            <div class="hero-img hero-img-2"><img src="./images/hero4.JPG" alt=""></div>
 
         </div>
         <!-- Plan Section -->
         <div class="plan-sec">
-<div class="plan-text">
-    <h1>
-        Choose Your Plan
-    </h1>
-    <p>
-        Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
-    </p>
-</div>
-<div class="plan-card">
-    <div class="plan-card1">
-        <h3>Free</h3>
-        <h1>$0</h1>
-        <p>Capture ideas and find them quickly</p>
-        <div class="list">
-            <ul class="custom-list">
-                <li>Sync unlimited devices</li>
-                <li>200 MB max. note size
-                </li>
-                <li>Customize Home dashboard and access extra widgets</li>
-                <li>10 GB monthly uploads
-                </li>
-                <li>Add due dates, reminders, and notifications to your tasks
-                </li>
-                <li>Connect primary Google Calendar account
-                </li>
-            </ul>
+            <div class="plan-text" id="pricing">
+                <h1>
+                    Choose Your Plan
+                </h1>
+                <p>
+                    Whether you want to get organized, keep your personal life on track, or boost workplace
+                    productivity, Evernote has the right plan for you.
+                </p>
+            </div>
+            <div class="plan-card">
+                <div class="plan-card1">
+                    <h3>Free</h3>
+                    <h1>$0</h1>
+                    <p>Capture ideas and find them quickly</p>
+                    <div class="list">
+                        <ul class="custom-list">
+                            <li>Sync unlimited devices</li>
+                            <li>200 MB max. note size
+                            </li>
+                            <li>Customize Home dashboard and access extra widgets</li>
+                            <li>10 GB monthly uploads
+                            </li>
+                            <li>Add due dates, reminders, and notifications to your tasks
+                            </li>
+                            <li>Connect primary Google Calendar account
+                            </li>
+                        </ul>
+                        <div class="card-btn">
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card1 plan-card2">
+                    <h3>Personal</h3>
+                    <h1>$11.99</h1>
+                    <p>Capture ideas and find them quickly</p>
+                    <div class="list">
+                        <ul class="custom-list">
+                            <li>Sync unlimited devices</li>
+                            <li>200 MB max. note size
+                            </li>
+                            <li>Customize Home dashboard and access extra widgets</li>
+                            <li>10 GB monthly uploads
+                            </li>
+                            <li>Add due dates, reminders, and notifications to your tasks
+                            </li>
+                            <li>Connect primary Google Calendar account
+                            </li>
+                        </ul>
+                        <div class="card-btn blue-btn ">
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-card1">
+                    <h3>Organization</h3>
+                    <h1>$49.99</h1>
+                    <p>Capture ideas and find them quickly</p>
+                    <div class="list">
+                        <ul class="custom-list">
+                            <li>Sync unlimited devices</li>
+                            <li>200 MB max. note size
+                            </li>
+                            <li>Customize Home dashboard and access extra widgets</li>
+                            <li>10 GB monthly uploads
+                            </li>
+                            <li>Add due dates, reminders, and notifications to your tasks
+                            </li>
+                            <li>Connect primary Google Calendar account
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-btn">
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container hero-text-wh">
+
+            <h1>
+                Your work, everywhere you are
+            </h1>
+            <p>
+                Access your notes from your computer, phone or tablet by synchronising with various services, including
+                whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A
+                terminal app is also available!
+            </p>
             <div class="card-btn">
-                <button>Get Started</button>
+                <button>Try Taskey <i class="fa-solid fa-arrow-right"></i> </button>
             </div>
         </div>
+
     </div>
-     <div class="plan-card1 plan-card2">
-        <h3>Personal</h3>
-        <h1>$11.99</h1>
-        <p>Capture ideas and find them quickly</p>
-        <div class="list">
-            <ul class="custom-list">
-                <li>Sync unlimited devices</li>
-                <li>200 MB max. note size
-                </li>
-                <li>Customize Home dashboard and access extra widgets</li>
-                <li>10 GB monthly uploads
-                </li>
-                <li>Add due dates, reminders, and notifications to your tasks
-                </li>
-                <li>Connect primary Google Calendar account
-                </li>
-            </ul>
-            <div class="card-btn blue-btn ">
-                <button >Get Started</button>
+    <!-- Fourth Hero Section -->
+    <div class="hero-sec Five-hero" id="Fifth-hero">
+
+
+        <div class="hero-text ">
+            <h1>
+                100% your data
+            </h1>
+            <p>
+                The app is open source and your notes are saved to an open format, so you'll always have access to them.
+                Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+
+            </p>
+            <div class="btn1 btn-whitenew">
+                <button>Read more <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
+        <div class="hero-img hero-img-2"><img src="./images/5th.JPG" alt=""></div>
+
     </div>
-    <div class="plan-card1">
-        <h3>Organization</h3>
-        <h1>$49.99</h1>
-        <p>Capture ideas and find them quickly</p>
-        <div class="list">
-            <ul class="custom-list">
-                <li>Sync unlimited devices</li>
-                <li>200 MB max. note size
-                </li>
-                <li>Customize Home dashboard and access extra widgets</li>
-                <li>10 GB monthly uploads
-                </li>
-                <li>Add due dates, reminders, and notifications to your tasks
-                </li>
-                <li>Connect primary Google Calendar account
-                </li>
-            </ul>
-        </div>
-        <div class="card-btn">
-            <button>Get Started</button>
-        </div>
-    </div></div>
-</div>
+
+    <!-- Sponsers -->
+    <div class="hero-sec sponsors" id="sponsors">
+        <div class="hero-text ">
+            <h1>
+                Our sponsors </h1>
             
-           
+        </div>
+        <div class=" icons-img">
+            <img src="./images/icons/apple-black-logo.png" alt="">
+            <img src="./images/icons/gmail.png" alt="">
+            <img src="./images/icons/Twitter.png" alt="">
+            <img src="./images/icons/google-drive.png" alt="">
+        <img src="./images/icons/android-logo.png" alt="">
+            
+    </div>
+
     </div>
     </div>
 </body>

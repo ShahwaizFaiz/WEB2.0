@@ -16,15 +16,42 @@
 .main-cont{
     color: (var(--Text-color));
 }
+.scroll-btn a{
+    text-decoration: none;
+    color: var(--Text-color);
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.scroll-btn a i{
+    rotate: -90deg;
+    
+}
+.scroll-btn{
+    z-index: 1;
+    position: fixed;
+    bottom:50px ;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--Login-color);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
 .sub-cont{
+    position: relative;
     color: var(--bgColor-color);
     background-color: var(--primary-color);
     width: 100%;
     height: auto;
 }
 .header{
-    position: relative;
+    position: fixed;
     height: 64px;
+    width: 100%;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -33,7 +60,7 @@
         width: 160px;
         height: 30px;
     }
-    &>.navList ul{
+    &>.navList ul {
         gap: 50px;
         list-style: none;
         display: flex;
@@ -90,6 +117,10 @@
     background-color: var(--bgColor-color);
     
 }
+.navList ul li a{
+    color: var(--bgColor-color);
+    text-decoration: none;
+}
 .navList ul li:hover::after{
     content: "";
     display: block;
@@ -106,20 +137,25 @@
     display: none;
 }
 .hero-img img{
-    width: 550px;
+    width: 650px;
     height: auto;
 }
 
 .hero-sec{
-    margin: 25px 64px;
+    padding: 0px 64px;
     display: flex;
     gap: 50px;
+    height: 100vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.hero-text-wh h1,.hero-text-wh p {
+    color: var(--bgColor-color);
+}
 .hero-text{
+    color: var(--Text-color);
     &>h1{
         font-size: 50px;
         letter-spacing: 1px;
@@ -152,22 +188,25 @@
 .btn-whitenew:hover button:hover{
     box-shadow: 1px 1px 5px rgb(204, 197, 197);
 }
-.third-hero{
-    margin-top: 50px;
+.Fourth-hero{
+    margin-top: 25px;
+    height: auto;
     color: var(--Text-color);
 }
+
 .hero-img-2 img{
-    width: 500px;
+    width: 600px;
+    height: auto;
 }
-.hero-text2{
-    margin-left: 150px;
-}
+
 .Fourth-hero{
     height: 100vh;
     color: var(--bgColor-color);
-    margin: 250px 0px;
+    /* margin: 0px 64px; */
+
     background-color: var(--primary-color);
 }
+
 .plan-text h1,.plan-text p{
     margin: 25px 0px;
     color: var(--Text-color);
@@ -201,7 +240,7 @@ ul.custom-list {
     top: 3px;
   }
   .plan-card{
-    margin: 50px;
+    margin: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -237,10 +276,10 @@ ul.custom-list {
     border: 2px solid var(--Login-color);
     border-radius: 15px;
     width: 350px;
-    height: 500px;
+    height: auto;
     background-color: var(--bgColor-color);
     color: var(--Text-color);
-    padding:25px 30px;
+    padding:5px 30px;
   }
   .plan-card1 ul li, .plan-card1 h3, .plan-card1 h1, .plan-card1 p {
     margin: 10px 0px;
@@ -261,6 +300,49 @@ ul.custom-list {
   }
   .plan-card2 .list .custom-list::before{
     color: var(--Login-color);
+}
+.text-container{
+   
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 75px 64px;
+    height: auto;
+    &>h1{
+        font-size: 42px;
+        letter-spacing: 1px;
+    }
+    &>p{
+        line-height: 25px;
+        margin: 25px 0px;
+    }
+    &>button{
+        margin-top: 35px;
+    }
+}
+.Five-hero{
+    background-color: var(--bgColor-color);
+}
+.sponsors{
+    height: auto;
+    padding: 60px 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    &>.hero-text h1{
+        margin-bottom: 60px;
+    }
+}
+.icons-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    justify-content: space-evenly;
+}
+.icons-img img{
+    width: 100px;
+    height: auto;
 }
 @media(max-width: 1000px){
     .navList,.btns .btn1{
@@ -322,10 +404,33 @@ ul.custom-list {
     }
 }
 @media(max-width:880px){
+    .hero-text{
+        margin-top: 100px;
+    }
+    .hero-sec{
+        height: auto;
+    }
+    .hero-img{
+        margin-bottom: 35px;
+
+    }
+    .scroll-btn{
+        right: 15px;
+    }
     .hero-sec{
         flex-direction: column;
     }
     .hero-text2{
         margin-left: 0px;
     }
+    .icons-img{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        &>img{
+            margin: 0px 5px;
+            width: 45px;
+            height: auto;
+        }
+        }
 }
